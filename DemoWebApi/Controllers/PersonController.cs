@@ -31,8 +31,9 @@ namespace DemoWebApi.Controllers
         }
 
         // POST: api/Person
-        public void Post([FromBody]string value)
+        public void Post(Person val)
         {
+            people.Add(val);
         }
 
         // PUT: api/Person/5
