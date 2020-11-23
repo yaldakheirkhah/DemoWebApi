@@ -42,8 +42,9 @@ namespace DemoWebApi.Controllers
         }
 
         // DELETE: api/Person/5
-        public void Delete(int id)
+        public void Delete(Person val)
         {
+            people.Remove(val);
         }
     }
 }
